@@ -1,0 +1,82 @@
+/* ==============================
+   About Us Page Styling
+   ============================== */
+
+   .page {
+    max-width: 1100px;
+    margin: 0 auto; /* no extra gap with navbar/footer */
+    padding: 60px 20px 40px; /* clean vertical spacing */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Page Heading */
+  .page h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1f2937;
+    position: relative;
+  }
+  
+  /* Accent underline */
+  .page h1::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Content Card */
+  .page p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b5563;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* ==============================
+     Responsive Design
+     ============================== */
+  
+  @media (max-width: 1024px) {
+    .page {
+      padding: 50px 20px 35px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page h1 {
+      font-size: 28px;
+    }
+  
+    .page p {
+      font-size: 15px;
+      padding: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page {
+      padding: 40px 16px 30px;
+    }
+  
+    .page h1 {
+      font-size: 24px;
+    }
+  
+    .page p {
+      font-size: 14px;
+      line-height: 1.7;
+      padding: 18px;
+    }
+  }
+  
