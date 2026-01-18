@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Carousel.css";
+import "../../styles/carousel.css";
 
 interface CarouselProps {
   images: string[];
