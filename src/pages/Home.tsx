@@ -104,6 +104,44 @@ const Home: React.FC = () => {
           </a>
         </div>
       </section>
+
+{/* ===== Testimonials Section ===== */}
+<section className="testimonials-section">
+  <div className="container">
+    <h2>What Our Clients Say</h2>
+    <div className="testimonials-grid">
+      <article className="testimonial-card">
+        <p>"Zentrixa transformed our digital workflow seamlessly. Highly professional and reliable."</p>
+        <h4>John D.</h4>
+      </article>
+      <article className="testimonial-card">
+        <p>"Outstanding support and innovative solutions. They always go the extra mile."</p>
+        <h4>Priya S.</h4>
+      </article>
+      <article className="testimonial-card">
+        <p>"Their cloud solutions improved our scalability and reduced costs significantly."</p>
+        <h4>Michael L.</h4>
+      </article>
+    </div>
+  </div>
+</section>
+
+{/* ===== Expertise / Tech Stack Section ===== */}
+<section className="expertise-section">
+  <div className="container">
+    <h2>Our Expertise</h2>
+    <p>Leveraging modern technologies to deliver scalable, future-ready solutions.</p>
+    <div className="tech-grid">
+      <div className="tech-card">React</div>
+      <div className="tech-card">Node.js</div>
+      <div className="tech-card">AWS</div>
+      <div className="tech-card">PHP</div>
+      <div className="tech-card">Python</div>
+      <div className="tech-card">Data Analytics</div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 };
