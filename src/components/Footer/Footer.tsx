@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           <h4>Contact Us</h4>
           <p>Email: zentrixatechnologies@gmai.com</p>
           <p>Phone: +91 6264420968</p>
-          <p>Address: Your City, India</p>
+          <p>Address: Bengaluru, India</p>
         </div>
       </div>
 
