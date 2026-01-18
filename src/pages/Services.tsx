@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Services.css";
 import Carousel from "../components/carousel/Carousel";
 
-// ✅ Using same banner images (replace with service-specific if needed)
 import service1 from "../assets/images/banner1.jpg";
 import service2 from "../assets/images/banner2.jpg";
 import service3 from "../assets/images/banner3.jpg";
