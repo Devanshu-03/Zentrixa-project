@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your deployment branch
+      - main  # deploy when main branch is pushed
 
 jobs:
   build-and-deploy:
@@ -19,9 +19,9 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build app
+      - name: Build React app
         run: npm run build
 
       - name: Deploy to GitHub Pages
