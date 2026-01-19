@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>Email: zentrixatechnologies@gmai.com</p>
+          <p>Email: zentrixatechnologies@gmail.com</p>
           <p>Phone: +91 6264420968</p>
           <p>Address: Bengaluru, Karnataka, India</p>
         </div>
