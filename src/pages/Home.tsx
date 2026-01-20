@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
+import "../styles/screen_resolution/common_media_query.css";
 import Carousel from "../components/carousel/Carousel";
 
 // Banner images
@@ -40,8 +41,9 @@ const Home: React.FC = () => {
           <div className="about-content">
             <h2>About Zentrixa Technologies</h2>
             <p>
-              At Zentrixa, we combine innovation and expertise to deliver scalable,
-              secure, and impactful IT solutions tailored to your business needs.
+              At Zentrixa, we combine innovation and expertise to deliver
+              scalable, secure, and impactful IT solutions tailored to your
+              business needs.
             </p>
             <a href="/about-us" className="btn primary">
               Learn More
@@ -105,43 +107,54 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-{/* ===== Testimonials Section ===== */}
-<section className="testimonials-section">
-  <div className="container">
-    <h2>What Our Clients Say</h2>
-    <div className="testimonials-grid">
-      <article className="testimonial-card">
-        <p>"Zentrixa transformed our digital workflow seamlessly. Highly professional and reliable."</p>
-        <h4>John D.</h4>
-      </article>
-      <article className="testimonial-card">
-        <p>"Outstanding support and innovative solutions. They always go the extra mile."</p>
-        <h4>Priya S.</h4>
-      </article>
-      <article className="testimonial-card">
-        <p>"Their cloud solutions improved our scalability and reduced costs significantly."</p>
-        <h4>Michael L.</h4>
-      </article>
-    </div>
-  </div>
-</section>
+      {/* ===== Testimonials Section ===== */}
+      <section className="testimonials-section">
+        <div className="container">
+          <h2>What Our Clients Say</h2>
+          <div className="testimonials-grid">
+            <article className="testimonial-card">
+              <p>
+                "Zentrixa transformed our digital workflow seamlessly. Highly
+                professional and reliable."
+              </p>
+              <h4>John D.</h4>
+            </article>
+            <article className="testimonial-card">
+              <p>
+                "Outstanding support and innovative solutions. They always go
+                the extra mile."
+              </p>
+              <h4>Priya S.</h4>
+            </article>
+            <article className="testimonial-card">
+              <p>
+                "Their cloud solutions improved our scalability and reduced
+                costs significantly."
+              </p>
+              <h4>Michael L.</h4>
+            </article>
+          </div>
+        </div>
+      </section>
 
-{/* ===== Expertise / Tech Stack Section ===== */}
-<section className="expertise-section">
-  <div className="container">
-    <h2>Our Expertise</h2>
-    <p>Leveraging modern technologies to deliver scalable, future-ready solutions.</p>
-    <div className="tech-grid">
-      <div className="tech-card">React</div>
-      <div className="tech-card">Node.js</div>
-      <div className="tech-card">AWS</div>
-      <div className="tech-card">PHP</div>
-      <div className="tech-card">Python</div>
-      <div className="tech-card">Data Analytics</div>
-    </div>
-  </div>
-</section>
-
+      {/* ===== Expertise / Tech Stack Section ===== */}
+      <section className="expertise-section">
+        <div className="container">
+          <h2>Our Expertise</h2>
+          <p>
+            Leveraging modern technologies to deliver scalable, future-ready
+            solutions.
+          </p>
+          <div className="tech-grid">
+            <div className="tech-card">React</div>
+            <div className="tech-card">Node.js</div>
+            <div className="tech-card">AWS</div>
+            <div className="tech-card">PHP</div>
+            <div className="tech-card">Python</div>
+            <div className="tech-card">Data Analytics</div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

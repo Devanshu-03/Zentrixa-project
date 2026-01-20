@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Services.css";
+import "../styles/screen_resolution/common_media_query.css";
 import Carousel from "../components/carousel/Carousel";
 
 import service1 from "../assets/images/banner1.jpg";

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Footer.css";
-
+import "../../styles/screen_resolution/common_media_query.css";
 
 const Footer: React.FC = () => {
   return (
