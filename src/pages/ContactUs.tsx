@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/ContactUs.css";
+import "../styles/screen_resolution/common_media_query.css";
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({

@@ -1,38 +1,51 @@
+/* ===============================
+   FOOTER BASE
+================================ */
+
 .footer {
-    background-color: #1f2937; /* dark gray */
+    background-color: #0a1f44;
     color: #f3f4f6;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
+    padding: 3rem 1.2rem 1.5rem;
+    font-family: Arial, sans-serif;
 }
+
+
+/* ===============================
+   FOOTER CONTAINER
+================================ */
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px; /* better spacing between sections */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
 }
 
-.footer-section {
-    flex: 1 1 220px; /* slightly smaller flex basis for better alignment */
-    margin: 10px 0;
-}
+
+/* ===============================
+   FOOTER SECTIONS
+================================ */
 
 .footer-section h3,
 .footer-section h4 {
-    margin-bottom: 15px;
     color: #fbbf24;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
-    font-size: 18px;
 }
 
 .footer-section p,
 .footer-section li {
-    font-size: 14px;
+    font-size: 0.9rem;
     line-height: 1.6;
-    color: #d1d5db; /* slightly lighter for readability */
+    color: #d1d5db;
 }
+
+
+/* ===============================
+   LINKS
+================================ */
 
 .footer-section ul {
     list-style: none;
@@ -41,49 +54,29 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 8px; /* consistent spacing */
+    margin-bottom: 0.5rem;
 }
 
 .footer-section ul li a {
-    text-decoration: none;
     color: #f3f4f6;
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: color 0.25s ease;
 }
 
 .footer-section ul li a:hover {
     color: #fbbf24;
 }
 
+
+/* ===============================
+   FOOTER BOTTOM
+================================ */
+
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 13px;
+    margin-top: 2.5rem;
+    padding-top: 1rem;
     border-top: 1px solid #374151;
-    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
     color: #9ca3af;
-}
-
-/* Responsive for small screens */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer-section {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer-section h3,
-    .footer-section h4 {
-        font-size: 16px;
-    }
-
-    .footer-section p,
-    .footer-section li {
-        font-size: 14px;
-    }
 }
