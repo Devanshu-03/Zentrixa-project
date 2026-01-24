@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Zentrixa-project/', // <-- REQUIRED for GitHub Pages
+  base: '/Zentrixa-Technologies/', // <-- REQUIRED for GitHub Pages
   plugins: [
     react({
       babel: {
