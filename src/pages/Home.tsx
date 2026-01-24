@@ -1,9 +1,7 @@
-// Home.tsx
 import React from "react";
 import "../styles/Home.css";
 import "../styles/screen_resolution/common_media_query.css";
 import Carousel from "../components/carousel/Carousel";
-import Testimonial from "../components/carousel/Testimonial"; // <-- fixed import
 
 // Banner images
 import banner1 from "../assets/images/banner1.jpg";
@@ -43,7 +41,9 @@ const Home: React.FC = () => {
           <div className="about-content">
             <h2>About Zentrixa Technologies</h2>
             <p>
-              At Zentrixa, we combine innovation and expertise to deliver scalable, secure, and impactful IT solutions tailored to your business needs.
+              At Zentrixa, we combine innovation and expertise to deliver
+              scalable, secure, and impactful IT solutions tailored to your
+              business needs.
             </p>
             <a href="/about-us" className="btn primary">
               Learn More
@@ -107,17 +107,33 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* ===== Testimonials Section (Carousel) ===== */}
+      {/* ===== Testimonials Section ===== */}
       <section className="testimonials-section">
         <div className="container">
           <h2>What Our Clients Say</h2>
-          <Testimonial
-            testimonials={[
-              { id: 1, name: "John D.", text: "Zentrixa transformed our digital workflow seamlessly. Highly professional and reliable." },
-              { id: 2, name: "Priya S.", text: "Outstanding support and innovative solutions. They always go the extra mile." },
-              { id: 3, name: "Michael L.", text: "Their cloud solutions improved our scalability and reduced costs significantly." },
-            ]}
-          />
+          <div className="testimonials-grid">
+            <article className="testimonial-card">
+              <p>
+                "Zentrixa transformed our digital workflow seamlessly. Highly
+                professional and reliable."
+              </p>
+              <h4>John D.</h4>
+            </article>
+            <article className="testimonial-card">
+              <p>
+                "Outstanding support and innovative solutions. They always go
+                the extra mile."
+              </p>
+              <h4>Priya S.</h4>
+            </article>
+            <article className="testimonial-card">
+              <p>
+                "Their cloud solutions improved our scalability and reduced
+                costs significantly."
+              </p>
+              <h4>Michael L.</h4>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -126,7 +142,8 @@ const Home: React.FC = () => {
         <div className="container">
           <h2>Our Expertise</h2>
           <p>
-            Leveraging modern technologies to deliver scalable, future-ready solutions.
+            Leveraging modern technologies to deliver scalable, future-ready
+            solutions.
           </p>
           <div className="tech-grid">
             <div className="tech-card">React</div>
