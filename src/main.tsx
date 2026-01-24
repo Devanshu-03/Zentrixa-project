@@ -6,7 +6,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Zentrixa-Technologies/">
+    <BrowserRouter basename="/Zentrixa-Project/">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
