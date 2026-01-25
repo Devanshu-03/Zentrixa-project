@@ -10,6 +10,8 @@ const ContactUs: React.FC = () => {
     message: "",
   });
 
+  const [showPopup, setShowPopup] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -18,8 +20,22 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you! Your message has been sent.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    // show success popup
+    setShowPopup(true);
+
+    // reset form
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
+    // auto-close popup after 3 seconds
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   };
 
   return (
@@ -28,8 +44,11 @@ const ContactUs: React.FC = () => {
         <div className="contact-container">
           <div className="contact-title">
             <h2>Contact Us</h2>
-            <p>Have questions or want to work together? Fill out the form below!</p>
+            <p>
+              Have questions or want to work together? Fill out the form below!
+            </p>
           </div>
+
           <form className="contact-form" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -39,6 +58,7 @@ const ContactUs: React.FC = () => {
               onChange={handleChange}
               required
             />
+
             <input
               type="email"
               name="email"
@@ -47,6 +67,7 @@ const ContactUs: React.FC = () => {
               onChange={handleChange}
               required
             />
+
             <input
               type="text"
               name="subject"
@@ -55,6 +76,7 @@ const ContactUs: React.FC = () => {
               onChange={handleChange}
               required
             />
+
             <textarea
               name="message"
               placeholder="Your Message"
@@ -62,10 +84,28 @@ const ContactUs: React.FC = () => {
               onChange={handleChange}
               required
             />
+
             <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
+
+      {/* =========================
+          THANK YOU POPUP
+      ========================== */}
+      {showPopup && (
+        <div className="thankyou-overlay">
+          <div className="thankyou-popup">
+            <div className="thankyou-icon">✔</div>
+            <h3>Thank You!</h3>
+            <p>
+              Your message has been sent successfully. We’ll get back to you
+              soon.
+            </p>
+            <button onClick={() => setShowPopup(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,421 +1,468 @@
-    /* =====================================================
+/* =====================================================
    GLOBAL BREAKPOINTS ORDER
    Desktop   : ≥1200px
    Laptop    : ≤1024px
    Tablet    : ≤992px / ≤768px
    Mobile    : ≤576px / ≤480px / ≤425px / ≤360px
 ===================================================== */
-    /* =====================================================
+
+
+/* =====================================================
    HOME PAGE – RESPONSIVE
 ===================================================== */
-    /* Tablets & small laptops */
-    
-    @media (max-width: 992px) {
-        .about-container {
-            flex-direction: column;
-            text-align: center;
-        }
-        .about-image {
-            margin-top: 30px;
-        }
-        .cta-glass {
-            padding: 32px 22px;
-        }
-        .cta-glass h2 {
-            font-size: 24px;
-        }
-        .testimonials-grid,
-        .tech-grid {
-            gap: 20px;
-        }
+
+
+/* Tablets & small laptops */
+
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
     }
-    /* Mobile devices */
-    
-    @media (max-width: 576px) {
-        .services-cards,
-        .features-grid {
-            gap: 20px;
-        }
-        /* .service-card,
+    .about-image {
+        margin-top: 30px;
+    }
+    .cta-glass {
+        padding: 32px 22px;
+    }
+    .cta-glass h2 {
+        font-size: 24px;
+    }
+    .testimonials-grid,
+    .tech-grid {
+        gap: 20px;
+    }
+}
+
+
+/* Mobile devices */
+
+@media (max-width: 576px) {
+    .services-cards,
+    .features-grid {
+        gap: 20px;
+    }
+    /* .service-card,
     .feature-card {
         max-width: 100%;
     } */
-        .service-card {
-            max-width: 100%;
-        }
-        .about-content h2 {
-            font-size: 28px;
-        }
-        .trusted-logos {
-            gap: 15px;
-        }
-        .testimonial-card,
-        .tech-card {
-            max-width: 100%;
-        }
+    .service-card {
+        max-width: 100%;
     }
-    /* Hover (desktop only feel) */
-    
-    @media (hover: hover) {
-        .feature-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
-        }
+    .about-content h2 {
+        font-size: 28px;
     }
-    /* ===============================
+    .trusted-logos {
+        gap: 15px;
+    }
+    .testimonial-card,
+    .tech-card {
+        max-width: 100%;
+    }
+}
+
+
+/* Hover (desktop only feel) */
+
+@media (hover: hover) {
+    .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+    }
+}
+
+
+/* ===============================
    MOBILE (≤425px)
 ================================ */
-    
-    @media (max-width: 425px) {
-        .feature-card {
-            padding: 1.4rem 1.2rem;
-            border-radius: 14px;
-        }
-        .feature-card img {
-            width: 48px;
-            margin-bottom: 0.6rem;
-        }
-        .feature-card h3 {
-            font-size: 1.05rem;
-            margin-bottom: 0.4rem;
-        }
-        .feature-card p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
+
+@media (max-width: 425px) {
+    .feature-card {
+        padding: 1.4rem 1.2rem;
+        border-radius: 14px;
     }
-    /* ===============================
+    .feature-card img {
+        width: 48px;
+        margin-bottom: 0.6rem;
+    }
+    .feature-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.4rem;
+    }
+    .feature-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* ===============================
    TABLET (426px – 768px)
 ================================ */
-    
-    @media (min-width: 426px) and (max-width: 768px) {
-        .feature-card {
-            padding: 1.8rem 1.5rem;
-        }
-        .feature-card img {
-            width: 56px;
-        }
-        .feature-card h3 {
-            font-size: 1.15rem;
-        }
-        .feature-card p {
-            font-size: 0.95rem;
-        }
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .feature-card {
+        padding: 1.8rem 1.5rem;
     }
-    /* ===============================
+    .feature-card img {
+        width: 56px;
+    }
+    .feature-card h3 {
+        font-size: 1.15rem;
+    }
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===============================
    LARGE SCREENS (1200px+)
 ================================ */
-    
-    @media (min-width: 1200px) {
-        .feature-card {
-            padding: 2.2rem 2rem;
-        }
-        .feature-card h3 {
-            font-size: 1.35rem;
-        }
-        .feature-card p {
-            font-size: 1.05rem;
-        }
+
+@media (min-width: 1200px) {
+    .feature-card {
+        padding: 2.2rem 2rem;
     }
-    /* =====================================================
+    .feature-card h3 {
+        font-size: 1.35rem;
+    }
+    .feature-card p {
+        font-size: 1.05rem;
+    }
+}
+
+
+/* =====================================================
    NAVBAR – RESPONSIVE
 ===================================================== */
-    /* ===============================
+
+
+/* ===============================
    MOBILE & TABLET (≤768px)
 ================================ */
-    
-    @media (max-width: 768px) {
-        /* Navbar spacing */
-        .navbar {
-            padding: 0.4rem 0.9rem;
-        }
-        /* Logo size */
-        .logo {
-            font-size: 1rem;
-        }
-        /* Hamburger */
-        .hamburger {
-            display: block;
-        }
-        /* Mobile menu container */
-        .nav-links {
-            position: fixed;
-            top: 56px;
-            /* navbar height */
-            left: 0;
-            width: 100%;
-            height: calc(100vh - 56px);
-            background-color: #1f2937;
-            flex-direction: column;
-            display: none;
-            overflow-y: auto;
-            z-index: 1000;
-        }
-        /* Show menu */
-        .nav-links.open {
-            display: flex;
-        }
-        /* Menu items */
-        .nav-links li {
-            width: 100%;
-            text-align: center;
-        }
-        .nav-links li a {
-            display: block;
-            padding: 1rem;
-            font-size: 0.9rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        /* Disable underline animation on mobile */
-        .nav-links li a::after {
-            display: none;
-        }
+
+@media (max-width: 768px) {
+    /* Navbar spacing */
+    .navbar {
+        padding: 0.4rem 0.9rem;
     }
-    /* ===============================
+    /* Logo size */
+    .logo {
+        font-size: 1rem;
+    }
+    /* Hamburger */
+    .hamburger {
+        display: block;
+    }
+    /* Mobile menu container */
+    .nav-links {
+        position: fixed;
+        top: 56px;
+        /* navbar height */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 56px);
+        background-color: #1f2937;
+        flex-direction: column;
+        display: none;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+    /* Show menu */
+    .nav-links.open {
+        display: flex;
+    }
+    /* Menu items */
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li a {
+        display: block;
+        padding: 1rem;
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    /* Disable underline animation on mobile */
+    .nav-links li a::after {
+        display: none;
+    }
+}
+
+
+/* ===============================
    SMALL MOBILES (≤425px)
 ================================ */
-    
-    @media (max-width: 425px) {
-        .logo {
-            font-size: 0.95rem;
-        }
-        .nav-links li a {
-            font-size: 0.85rem;
-        }
-        /* Active link color tweak */
-        .nav-links li a.active {
-            color: #a12bbd;
-        }
+
+@media (max-width: 425px) {
+    .logo {
+        font-size: 0.95rem;
     }
-    /* =====================================================
+    .nav-links li a {
+        font-size: 0.85rem;
+    }
+    /* Active link color tweak */
+    .nav-links li a.active {
+        color: #a12bbd;
+    }
+}
+
+
+/* =====================================================
    FOOTER – RESPONSIVE
 ===================================================== */
-    /* ===============================
+
+
+/* ===============================
    MOBILE (≤425px)
 ================================ */
-    
-    @media (max-width: 425px) {
-        .footer {
-            padding: 2.5rem 1rem 1.2rem;
-        }
-        .footer-container {
-            gap: 1.5rem;
-            text-align: center;
-        }
-        .footer-section h3,
-        .footer-section h4 {
-            font-size: 1rem;
-        }
-        .footer-section p,
-        .footer-section li {
-            font-size: 0.85rem;
-        }
+
+@media (max-width: 425px) {
+    .footer {
+        padding: 2.5rem 1rem 1.2rem;
     }
-    /* ===============================
+    .footer-container {
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+    .footer-section p,
+    .footer-section li {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ===============================
    TABLET (426px – 768px)
 ================================ */
-    
-    @media (min-width: 426px) and (max-width: 768px) {
-        .footer {
-            padding: 3rem 1.5rem 1.5rem;
-        }
-        .footer-section h3,
-        .footer-section h4 {
-            font-size: 1.05rem;
-        }
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .footer {
+        padding: 3rem 1.5rem 1.5rem;
     }
-    /* =====================================================
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1.05rem;
+    }
+}
+
+
+/* =====================================================
    ABOUT US PAGE – RESPONSIVE
 ===================================================== */
-    /* Laptops */
-    
-    @media (max-width: 1024px) {
-        .page {
-            padding: 50px 20px 35px;
-        }
+
+
+/* Laptops */
+
+@media (max-width: 1024px) {
+    .page {
+        padding: 50px 20px 35px;
     }
-    /* Tablets */
-    
-    @media (max-width: 768px) {
-        .page h1 {
-            font-size: 28px;
-        }
-        .page p {
-            font-size: 15px;
-            padding: 22px;
-        }
+}
+
+
+/* Tablets */
+
+@media (max-width: 768px) {
+    .page h1 {
+        font-size: 28px;
     }
-    /* Mobiles */
-    
-    @media (max-width: 480px) {
-        .page {
-            padding: 40px 16px 30px;
-        }
-        .page h1 {
-            font-size: 24px;
-        }
-        .page p {
-            font-size: 14px;
-            line-height: 1.7;
-            padding: 18px;
-        }
+    .page p {
+        font-size: 15px;
+        padding: 22px;
     }
-    /*about us code added by abhishek*/
-    
-    @media (max-width: 425px) {
-        .page {
-            padding: 2rem 0.8rem;
-        }
-        .page-title {
-            font-size: 1.5rem;
-        }
-        .about-card {
-            padding: 1.2rem 1.1rem;
-        }
-        .about-card p {
-            font-size: 0.9rem;
-        }
+}
+
+
+/* Mobiles */
+
+@media (max-width: 480px) {
+    .page {
+        padding: 40px 16px 30px;
     }
-    
-    @media (min-width: 426px) and (max-width: 768px) {
-        .page {
-            padding: 3rem 1.5rem;
-        }
-        .page-title {
-            font-size: 1.9rem;
-        }
-        .about-card {
-            padding: 1.6rem 1.5rem;
-        }
-        .about-card p {
-            font-size: 0.97rem;
-        }
+    .page h1 {
+        font-size: 24px;
     }
-    
-    @media (min-width: 769px) {
-        .page {
-            padding: 4rem 2rem;
-        }
-        .page-title {
-            font-size: 2.2rem;
-        }
-        .about-card {
-            padding: 1.8rem 1.8rem;
-        }
-        .about-card p {
-            font-size: 1rem;
-        }
+    .page p {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 18px;
     }
-    
-    @media (min-width: 1200px) {
-        .page-container {
-            max-width: 1200px;
-        }
-        .page-title {
-            font-size: 2.4rem;
-        }
-        .about-card p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
+}
+
+
+/*about us code added by abhishek*/
+
+@media (max-width: 425px) {
+    .page {
+        padding: 2rem 0.8rem;
     }
-    /* =====================================================
+    .page-title {
+        font-size: 1.5rem;
+    }
+    .about-card {
+        padding: 1.2rem 1.1rem;
+    }
+    .about-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .page {
+        padding: 3rem 1.5rem;
+    }
+    .page-title {
+        font-size: 1.9rem;
+    }
+    .about-card {
+        padding: 1.6rem 1.5rem;
+    }
+    .about-card p {
+        font-size: 0.97rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .page {
+        padding: 4rem 2rem;
+    }
+    .page-title {
+        font-size: 2.2rem;
+    }
+    .about-card {
+        padding: 1.8rem 1.8rem;
+    }
+    .about-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-container {
+        max-width: 1200px;
+    }
+    .page-title {
+        font-size: 2.4rem;
+    }
+    .about-card p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+}
+
+
+/* =====================================================
    CAROUSEL – RESPONSIVE
 ===================================================== */
-    
-    @media (max-width: 425px) {
-        .carousel {
-            height: 55vh;
-            /* reduce height */
-        }
-        .services-carousel {
-            height: 45vh;
-        }
-        .carousel-content {
-            padding: 0 14px;
-        }
-        .carousel-content h1 {
-            font-size: 24px;
-            line-height: 1.3;
-        }
-        .carousel-content h2 {
-            font-size: 16px;
-            margin: 8px 0;
-        }
-        .carousel-content p {
-            font-size: 14px;
-            line-height: 1.5;
-            max-width: 100%;
-        }
-        .carousel-buttons {
-            margin-top: 18px;
-            gap: 12px;
-        }
-        .carousel-buttons .btn {
-            padding: 10px 20px;
-            font-size: 14px;
-        }
+
+@media (max-width: 425px) {
+    .carousel {
+        height: 55vh;
+        /* reduce height */
     }
-    
-    @media (min-width: 426px) and (max-width: 768px) {
-        .carousel {
-            height: 60vh;
-        }
-        .services-carousel {
-            height: 50vh;
-        }
-        .carousel-content h1 {
-            font-size: 32px;
-        }
-        .carousel-content h2 {
-            font-size: 20px;
-        }
-        .carousel-content p {
-            font-size: 15px;
-        }
-        .carousel-buttons .btn {
-            padding: 11px 26px;
-            font-size: 14.5px;
-        }
+    .services-carousel {
+        height: 45vh;
     }
-    
-    @media (min-width: 769px) and (max-width: 1200px) {
-        .carousel {
-            height: 65vh;
-        }
-        .carousel-content h1 {
-            font-size: 38px;
-        }
-        .carousel-content h2 {
-            font-size: 24px;
-        }
+    .carousel-content {
+        padding: 0 14px;
     }
-    
-    @media (min-width: 1200px) {
-        .carousel {
-            height: 70vh;
-        }
+    .carousel-content h1 {
+        font-size: 24px;
+        line-height: 1.3;
     }
-    /* =====================================================
+    .carousel-content h2 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    .carousel-content p {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+    .carousel-buttons {
+        margin-top: 18px;
+        gap: 12px;
+    }
+    .carousel-buttons .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .carousel {
+        height: 60vh;
+    }
+    .services-carousel {
+        height: 50vh;
+    }
+    .carousel-content h1 {
+        font-size: 32px;
+    }
+    .carousel-content h2 {
+        font-size: 20px;
+    }
+    .carousel-content p {
+        font-size: 15px;
+    }
+    .carousel-buttons .btn {
+        padding: 11px 26px;
+        font-size: 14.5px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .carousel {
+        height: 65vh;
+    }
+    .carousel-content h1 {
+        font-size: 38px;
+    }
+    .carousel-content h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel {
+        height: 70vh;
+    }
+}
+
+
+/* =====================================================
    CONTACT US – RESPONSIVE
 ===================================================== */
-    /* Tablets & mobiles */
-    
-    @media (max-width: 768px) {
-        .contact-container {
-            padding: 1.8rem;
-            border-radius: 1.2rem;
-        }
-        .contact-title h2 {
-            font-size: 1.75rem;
-        }
+
+
+/* Tablets & mobiles */
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1.8rem;
+        border-radius: 1.2rem;
     }
-    /* =====================================================
+    .contact-title h2 {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* =====================================================
    SERVICES PAGE – RESPONSIVE
 ===================================================== */
-    /* Large desktops */
-    
-    @media (min-width: 1200px) {
+
+
+/* Large desktops */
+
+
+/* @media (min-width: 1200px) {
         .page h1 {
             font-size: 40px;
         }
@@ -425,10 +472,13 @@
         .service-card p {
             font-size: 16px;
         }
-    }
-    /* Laptops & tablets */
-    
-    @media (max-width: 1024px) {
+    } */
+
+
+/* Laptops & tablets */
+
+
+/* @media (max-width: 1024px) {
         .services-grid {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
@@ -439,10 +489,13 @@
         .page h1 {
             font-size: 32px;
         }
-    }
-    /* Tablets */
-    
-    @media (max-width: 768px) {
+    } */
+
+
+/* Tablets */
+
+
+/* @media (max-width: 768px) {
         .page {
             padding: 50px 20px 30px;
         }
@@ -465,10 +518,13 @@
         .stars {
             font-size: 16px;
         }
-    }
-    /* Small mobiles */
-    
-    @media (max-width: 480px) {
+    } */
+
+
+/* Small mobiles */
+
+
+/* @media (max-width: 480px) {
         .page {
             padding: 40px 16px 25px;
         }
@@ -485,17 +541,23 @@
         .stars {
             font-size: 15px;
         }
-    }
-    
-    @media (max-width: 425px) {
+    } */
+
+
+/*@media (max-width: 425px) {
         .service-card {
             min-height: 175px !important;
-            /* balanced mobile height */
-        }
-    }
-    /* Very small phones */
-    
-    @media (max-width: 360px) {
+          
+}
+
+}
+*/
+
+
+/* Very small phones */
+
+
+/* @media (max-width: 360px) {
         .page h1 {
             font-size: 22px;
         }
@@ -509,4 +571,105 @@
         .stars {
             font-size: 14px;
         }
+    } */
+
+
+/* =====================================================
+   SERVICES PAGE – RESPONSIVE
+===================================================== */
+
+
+/* @media (max-width: 425px) {
+    .page {
+        padding: 40px 14px 30px;
     }
+    .page h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .page h1::after {
+        width: 50px;
+        height: 3px;
+    }
+    .services-grid {
+        gap: 18px;
+    }
+    .service-card {
+        padding: 20px 18px;
+        min-height: auto;
+       
+
+
+}
+.service-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.service-card p {
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+.stars {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+}
+@media (min-width: 426px) and (max-width: 768px) {
+    .page {
+        padding: 50px 18px 35px;
+    }
+    .page h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .services-grid {
+        gap: 22px;
+    }
+    .service-card {
+        padding: 26px 22px;
+        min-height: 220px;
+    }
+    .service-card h3 {
+        font-size: 18px;
+    }
+    .service-card p {
+        font-size: 14.5px;
+    }
+    .stars {
+        font-size: 17px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .page h1 {
+        font-size: 34px;
+    }
+    .service-card {
+        min-height: 190px;
+    }
+    .service-card h3 {
+        font-size: 19px;
+    }
+    .service-card p {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .page {
+        max-width: 1300px;
+    }
+    .page h1 {
+        font-size: 38px;
+    }
+    .service-card h3 {
+        font-size: 20px;
+    }
+    .service-card p {
+        font-size: 15.5px;
+    }
+    .stars {
+        font-size: 18px;
+    }
+}
+*/
