@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/Footer.css";
 import "../../styles/screen_resolution/common_media_query.css";
 
@@ -17,10 +18,10 @@ const Footer: React.FC = () => {
         <div className="footer-section links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
           </ul>
         </div>
 
