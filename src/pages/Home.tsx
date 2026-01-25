@@ -1,5 +1,6 @@
 // Home.tsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import "../styles/screen_resolution/common_media_query.css";
 import Carousel from "../components/carousel/Carousel";
@@ -45,9 +46,9 @@ const Home: React.FC = () => {
             <p>
               At Zentrixa, we combine innovation and expertise to deliver scalable, secure, and impactful IT solutions tailored to your business needs.
             </p>
-            <a href="/about-us" className="btn primary">
+            <Link to="/about-us" className="btn primary">
               Learn More
-            </a>
+            </Link>
           </div>
           <div className="about-image">
             <img src={man1} alt="About Zentrixa Technologies" />
@@ -101,9 +102,9 @@ const Home: React.FC = () => {
         <div className="cta-glass">
           <h2>Ready to Transform Your Business?</h2>
           <p>Get in touch with us today and let’s build the future together.</p>
-          <a href="/contact-us" className="btn primary">
+          <Link to="/contact-us" className="btn primary">
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
 
