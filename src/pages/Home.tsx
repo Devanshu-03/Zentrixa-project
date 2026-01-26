@@ -117,6 +117,7 @@ const Home: React.FC = () => {
               { id: 1, name: "John D.", text: "Zentrixa transformed our digital workflow seamlessly. Highly professional and reliable." },
               { id: 2, name: "Priya S.", text: "Outstanding support and innovative solutions. They always go the extra mile." },
               { id: 3, name: "Michael L.", text: "Their cloud solutions improved our scalability and reduced costs significantly." },
+              { id: 4, name: "Mike G.", text: "Their cloud solutions improved our scalability and reduced costs significantly." },
             ]}
           />
         </div>

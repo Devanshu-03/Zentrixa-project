@@ -13,9 +13,10 @@ interface TestimonialProps {
 
 const Testimonial: React.FC<TestimonialProps> = ({ testimonials }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const scrollSpeed = 0.5; // pixels per frame, adjust for speed
+  const animationRef = useRef<number | null>(null);
+  const scrollSpeed = 0.4; // smooth speed
 
-  // Duplicate testimonials for seamless infinite scroll
+  // Duplicate items for seamless loop
   const items = [...testimonials, ...testimonials];
 
   useEffect(() => {
@@ -23,37 +24,63 @@ const Testimonial: React.FC<TestimonialProps> = ({ testimonials }) => {
     if (!carousel) return;
 
     let scrollPos = 0;
-    const totalScrollWidth = carousel.scrollWidth / 2; // width of first set
+    const singleSetWidth = carousel.scrollWidth / 2;
+    let isPaused = false;
 
     const step = () => {
-      scrollPos += scrollSpeed;
+      if (!isPaused) {
+        scrollPos += scrollSpeed;
 
-      // Seamless reset at end of first set
-      if (scrollPos >= totalScrollWidth) {
-        scrollPos = 0;
+        if (scrollPos >= singleSetWidth) {
+          scrollPos = 0;
+        }
+
+        carousel.scrollLeft = scrollPos;
       }
 
-      carousel.scrollLeft = scrollPos;
-
-      requestAnimationFrame(step);
+      animationRef.current = requestAnimationFrame(step);
     };
 
-    const animationId = requestAnimationFrame(step);
+    animationRef.current = requestAnimationFrame(step);
 
-    return () => cancelAnimationFrame(animationId);
-  }, [testimonials, scrollSpeed]);
+    // Pause on hover
+    const pause = () => (isPaused = true);
+    const resume = () => (isPaused = false);
+
+    carousel.addEventListener("mouseenter", pause);
+    carousel.addEventListener("mouseleave", resume);
+    carousel.addEventListener("touchstart", pause);
+    carousel.addEventListener("touchend", resume);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+
+      carousel.removeEventListener("mouseenter", pause);
+      carousel.removeEventListener("mouseleave", resume);
+      carousel.removeEventListener("touchstart", pause);
+      carousel.removeEventListener("touchend", resume);
+    };
+  }, [testimonials]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <section className="testimonial-section">
       <div ref={carouselRef} className="testimonials-carousel">
         {items.map((t, index) => (
-          <div key={index} className="testimonial-card">
-            <p>"{t.text}"</p>
-            <h4>{t.name}</h4>
-          </div>
+          <article
+            key={`${t.id}-${index}`}
+            className="testimonial-card"
+          >
+            <p className="testimonial-text">“{t.text}”</p>
+
+            <div className="testimonial-author">
+              <h4>{t.name}</h4>
+            </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -79,6 +79,11 @@
     font-size: 15px;
     line-height: 1.7;
     color: #4b5563;
+    /* letter-spacing: 0;
+    word-spacing: 0; */
+    text-align: left;
+    hyphens: auto;
+    word-break: normal;
 }
 
 
