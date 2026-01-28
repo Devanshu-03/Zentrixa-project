@@ -58,22 +58,34 @@ const Home: React.FC = () => {
 
       {/* ===== Services ===== */}
       <section className="services-preview">
-        <h2>Our Core Services</h2>
-        <div className="services-cards">
-          <article className="service-card">
-            <h3>Software Development</h3>
-            <p>Custom, scalable software solutions.</p>
-          </article>
-          <article className="service-card">
-            <h3>Web Applications</h3>
-            <p>High-performance, responsive web apps.</p>
-          </article>
-          <article className="service-card">
-            <h3>Cloud & Deployment</h3>
-            <p>Secure and scalable cloud infrastructure.</p>
-          </article>
-        </div>
-      </section>
+    <h2>Our Core Services</h2>
+
+    <div className="services-cards">
+      <article className="service-card">
+        <h3>Software Development</h3>
+        <p>
+          Custom, scalable software solutions built to support business growth,
+          performance, and long-term success.
+        </p>
+      </article>
+
+      <article className="service-card">
+        <h3>Web Applications</h3>
+        <p>
+          High-performance, responsive web applications designed for speed,
+          usability, and seamless user experience.
+        </p>
+      </article>
+
+      <article className="service-card">
+        <h3>Cloud & Deployment</h3>
+        <p>
+          Secure, scalable cloud infrastructure with smooth deployment,
+          monitoring, and performance optimization.
+        </p>
+      </article>
+    </div>
+  </section>
 
       {/* ===== Features ===== */}
       <section className="features-section">
